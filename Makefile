@@ -3,7 +3,7 @@ default: all
 
 all: langde pdf png
 
-PDFFILES=$(foreach lang, en de de-f, SL-vidas_paralelas-${lang}.pdf)
+PDFFILES=$(foreach lang, de de-f en es, SL-vidas_paralelas-${lang}.pdf)
 
 PNGFILES=$(addsuffix .png,$(basename ${PDFFILES}))
 
